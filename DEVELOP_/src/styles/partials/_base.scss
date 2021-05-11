@@ -1,0 +1,29 @@
+html {
+  min-height: 100%;
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  height: 100%;
+  margin: 0;
+}
+
+/* CUSTOM WEBKIT SCROLLBAR */
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 5px;
+  &-track {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background: $color-white-500; 
+    border-radius: 5px;
+  }
+  &-thumb {
+    background: #555; 
+    border-radius: 5px;
+    &:hover {
+      background: #444; 
+    }
+  }
+}

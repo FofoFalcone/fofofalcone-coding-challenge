@@ -1,0 +1,199 @@
+/*--- CUSTOM WEBKIT SCROLLBAR ---*/
+
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
+
+/*--- ---*/
+/*--- CUSTOM FONTS ---*/
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("poppins-regular-webfont.woff2") format("woff2"),
+    url("poppins-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("poppins-medium-webfont.woff2") format("woff2"),
+    url("poppins-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*--- ---*/
+
+html {
+  min-height: 100%;
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  height: 100%;
+  margin: 0;
+  font-family: "Poppins-Regular";
+  color: #fff;
+}
+
+/*--- CUSTOM HEADINGS ---*/
+
+.lim__h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -9999px;
+  font-family: "Poppins-Medium";
+}
+
+.lim__h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  color: #00dd00;
+  font-family: "Poppins-Medium";
+  font-size: 30px;
+}
+
+/*--- ---*/
+/*--- LIM BLOCK  ---*/
+
+.lim__block {
+  min-height: 100%;
+}
+
+.lim__container--row {
+  width: 100%;
+  align-items: center;
+}
+
+.lim__container--background {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+/*--- LIM OVERLAY - CONTAINS THE LIST FOR ALL SCOOTERS  ---*/
+
+.lim__container--scooters-overlay {
+  position: relative;
+  width: 65vw;
+  height: 85vh;
+  justify-content: center;
+  align-items: center;
+  margin: 60px auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  overflow-y: auto;
+}
+
+.lim__container--scooters-content {
+  position: relative;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  width: 50vw;
+  max-width: 90%;
+  min-height: 100%;
+}
+
+/*--- LIM LOGO  ---*/
+
+.lim__logo--img {
+  width: 35%;
+}
+
+/*--- ---*/
+/*--- LIM BUTTONS LIST  ---*/
+
+.lim__buttons-list {
+  padding: 15px 0;
+}
+
+.lim__background--primary {
+  background-color: #00dd00;
+  width: 100%;
+}
+
+/*--- ---*/
+/*--- LIM SCOOTERS LIST  ---*/
+
+.lim__scooters-list {
+  justify-content: left;
+}
+
+.lim__scooter-info {
+  margin-top: 30px;
+}
+
+.lim__scooter-form {
+  width: 60%;
+}
+
+.lim__scooter-name {
+  color: #fff;
+  font-family: "Poppins-Medium";
+  font-size: 24px;
+}
+
+.lim__scooter-position,
+.lim__scooter-charge-label {
+  margin: 10px 0;
+  color: #fff;
+}
+
+.lim__scooter-charge-status {
+  min-height: 30px;
+  border-radius: 5px;
+}
+.lim__scooter-charge-status--high {
+  width: 100%;
+  background-color: #1ec31e;
+}
+.lim__scooter-charge-status--medium {
+  width: 60%;
+  background-color: #f5b453;
+}
+.lim__scooter-charge-status--low {
+  width: 30%;
+  background-color: #be4141;
+}
+
+/*--- ---*/
+/*--- ---*/
+
+/*--- CSS FLEXBOX ---*/
+
+.flex {
+  display: flex;
+}
+.flex-left {
+  justify-content: left;
+}
+.flex-center {
+  justify-content: center;
+}
+
+/*--- ---*/
